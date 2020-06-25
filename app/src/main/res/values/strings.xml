@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Conversor que Converte</string>
+    <string name="intro_msg">Informe um valor e a conversão acontecerá olha só que cois</string>
+    <string name="informe_o_valor">Informe o valor em Real</string>
+    <string name="convertido_dolar">Valor em Dólar</string>
+    <string name="valor_em_euro">Valor em Euro</string>
+    <string name="calcular">Calcular</string>
+    <string name="informe_valor">Informe um valor</string>
+
+</resources>
