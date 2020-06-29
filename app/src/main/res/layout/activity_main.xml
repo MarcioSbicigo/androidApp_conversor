@@ -5,37 +5,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="8dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/intro_text"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="@string/intro_msg"
+        android:textSize="14sp"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/insert_value"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
         android:text="@string/informe_o_valor"
+        android:textSize="25sp"
         app:layout_constraintTop_toBottomOf="@id/intro_text"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edit_value"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
         android:text=""
+        android:inputType="numberSigned"
         app:layout_constraintTop_toBottomOf="@id/insert_value"
-        tools:ignore="MissingConstraints" />
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/value_dolar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="@string/convertido_dolar"
+        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/edit_value"
         tools:ignore="MissingConstraints" />
 
@@ -43,7 +55,10 @@
         android:id="@+id/text_dolar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/convertido_dolar"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/value_dolar"
         tools:ignore="MissingConstraints" />
 
@@ -51,7 +66,9 @@
         android:id="@+id/value_euro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="@string/valor_em_euro"
+        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/text_dolar"
         tools:ignore="MissingConstraints" />
 
@@ -59,7 +76,10 @@
         android:id="@+id/text_euro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/valor_em_euro"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/value_euro"
         tools:ignore="MissingConstraints" />
 
@@ -67,7 +87,11 @@
         android:id="@+id/button_calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@color/colorAccent"
         android:text="@string/calcular"
+        android:textColor="@color/colorLight"
+        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/text_euro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
