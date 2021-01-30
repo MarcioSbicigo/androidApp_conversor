@@ -1,2 +1,2 @@
 # androidApp_conversor
-Simples aplicação Android nativa, utilizando alguns elementos gráficos a partir do XML e funções de cálculo para a conversão dos valores.
+Simple Android Native application, with graphic elements using XML and some calculation functions to convert the values.
